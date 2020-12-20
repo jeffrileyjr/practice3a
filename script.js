@@ -26,6 +26,12 @@ function toggleTheme() {
 // our add task function
 function addTask() {
     // set variable for the p tag that we will create
+    // a side note - below we make a p tag because that is what the instructions called for
+    // however, to make it easier we could have our target container on our HTML be a ol tag
+    // and here we would make an li element instead of p element
+    // if we did this we would not need the counter variable, as an ordered list (ol) automatically numbers the items
+    // this would also automatically update our list numbering if we remove one
+    // I suggest you try it out and see how it works if you make those changes
     const taskItem = document.createElement('p');
     // lets get the value of our input
     const taskDescription = task.value;
